@@ -20,3 +20,12 @@ Your tags will get saved as a simple YAML list, like this:
 
 Note: This fieldtype uses "Tags" in general terms. If you're looking for a way to tag/taxonomize your content, you
 may be interested in checking out [taxonomies](/taxonomies) and the [Taxonomy fieldtype](/fieldtypes/taxonomy).
+
+## Example
+To display tag values separated by a comma you can use the [join](https://docs.statamic.com/modifiers/join) modifier:
+
+```{{ tags_field | join }}```
+
+Output:
+
+```Bears, Beets, Battlestar Galactica```
